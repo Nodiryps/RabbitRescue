@@ -1,27 +1,23 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
 
-import { AppComponent } from './app.component';
-import { IndexComponent } from './index/index.component';
+import {AppComponent} from './app.component';
+import {IndexComponent} from './index/index.component';
 import {AppRoutingModule} from './app.routes';
-import { ContactComponent } from './contact/contact.component';
-import { RabbitsComponent } from './rabbits/rabbits.component';
-import { CreateComponent } from './create/create.component';
-import { OverviewComponent } from './overview/overview.component';
+import {ContactComponent} from './contact/contact.component';
+import {RabbitsModule} from './rabbits/rabbits.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     IndexComponent,
-    ContactComponent,
-    RabbitsComponent,
-    CreateComponent,
-    OverviewComponent
+    ContactComponent
   ],
   imports: [
-    BrowserModule, AppRoutingModule
+    BrowserModule, AppRoutingModule, RabbitsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
