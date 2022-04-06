@@ -1,0 +1,29 @@
+.brand-logo img {
+  display: inline-block;
+  height: 75px;
+}
+
+nav#top ul a {
+  font-size: 1.5rem;
+  padding: 0 30px;
+}
+
+nav,
+nav .nav-wrapper {
+  height: 100px;
+  line-height: 100px;
+}
+
+dt {
+  float: left;
+  width: 200px;
+}
+
+#menu-icon {
+    display: none;
+    background-image: url(http://www.w3newbie.com/wp-content/uploads/icon.png);
+    background-position:center;
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+}
